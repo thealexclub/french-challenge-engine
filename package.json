@@ -1,0 +1,31 @@
+{
+  "name": "french-challenge-engine",
+  "version": "0.0.1",
+  "description": "A simple CLI that generates sentence construction challenges for french learners based on a library of known verbs",
+  "exports": "./src/index.ts",
+  "repository": "git@github.com:thealexclub/french-challenge-engine.git",
+  "author": "Alex Litzow <enter@thealex.club>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "yarn tsc -w",
+    "build": "yarn tsc"
+  },
+  "engines": {
+    "node": ">=14.16"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "cli-table": "^0.3.11",
+    "commander": "^9.3.0",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/cli-table": "^0.3.0",
+    "@types/commander": "^2.12.2",
+    "@types/node": "^18.0.0",
+    "@types/yaml": "^1.9.7",
+    "typescript": "^4.7.4"
+  }
+}
