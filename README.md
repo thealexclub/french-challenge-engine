@@ -26,24 +26,58 @@ Qualifier: The qualifier adds an extra bit of challenge to creating the sentence
 
 #### Default Qualifiers
 
+```yml
+qualifiers:
+  - 
+    symbol: "?"
+    description: Format as a question using any question word.
+    example: Pr -> Tu -> Travailler -> ? = Est-ce que tu travailles?
+  - 
+    symbol: "!"
+    description: Negate the verb.
+    example: Pr -> Tu -> Travailler -> ! = Tu ne travailles pas.
+  - 
+    symbol: "<"
+    description: Subject to start scentence.
+    example: Pr -> Tu -> Travailler -> < = Tu travailles.
+  - 
+    symbol: ">"
+    description: Subject to NOT start scentence.
+    example: Pr -> Tu -> Travailler -> > = Aujourd'hui Tu travailles.
+  - 
+    symbol: '"verb"'
+    description: Use both verbs. Qualifying verb can be conjigated in any way.
+    example: Pr -> Tu -> Travailler -> Marcher = Tu travailles maintenant et tu vas marcher à la maison cd soir.
+```
+
 > Symbol: ?
+
 > Description: Format as a question, using any question word.
+
 > Example: `present -> Tu -> Travailler -> ?` = Est-ce que tu travailles?
 
 > Symbol: !
+
 > Description: Negate the verb.
+
 > Example: `present -> Tu -> Travailler -> !` = Tu ne travailles pas.
 
 > Symbol: <
+
 > Description: Subject to start sentence.
+
 > Example: `present -> Tu -> Travailler -> <` = Tu travailles.
 
 > Symbol: >
+
 > Description: Subject to NOT start sentence.
+
 > Example: `present -> Tu -> Travailler -> >` = Aujourd'hui tu travailles.
 
 > Symbol: "verb"
+
 > Description: Use both verbs, the secondary very can be used in any way.
+
 > Example: `present -> Tu -> Travailler -> Marcher` = Tu travailles maintenant et tu vas marcher à la maison ce soir.
 
 The qualifiers can be found in the `config.yml` file. Feel free to add more qualifiers as you progress through your learning. 
